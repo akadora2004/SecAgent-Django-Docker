@@ -1,0 +1,10 @@
+services:
+  django:
+    build: ./django
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/code
+    env_file:
+      - .env
+    restart: always

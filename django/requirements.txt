@@ -1,0 +1,5 @@
+Django
+google-genai
+python-dotenv
+uvicorn
+python-whois
