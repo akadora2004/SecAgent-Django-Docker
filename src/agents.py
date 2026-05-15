@@ -14,7 +14,7 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 def get_whois_info(domain: str):
     """
     指定されたドメインのWHOIS情報を取得し、登録日や所有者情報を返します。
-    ドメインの信頼性を調査する際に使用してください。
+    ドメインの信頼性を調査する際に使用。
     """
     if not re.match(r"^[a-zA-Z0-9\-\.]+$", domain):
         return "エラー: 無効なドメイン形式です。"
